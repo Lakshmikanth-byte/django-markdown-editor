@@ -28,6 +28,7 @@ def post_form_view(request):
         form = PostForm()
         context = {'form': form, 'title': 'Post Form'}
     return render(request, 'custom_form.html', context)
+    # return render(request, 'custom_form.html', context)
 
 
 def test_markdownify(request):
